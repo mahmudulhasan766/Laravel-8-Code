@@ -18,4 +18,5 @@ use App\Http\Controllers\MyController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/llogin', [MyController::class, 'Login']);
+Route::get('/login', [MyController::class, 'Login']);
+Route::get('/signpu', [MyController::class, 'Signup']);

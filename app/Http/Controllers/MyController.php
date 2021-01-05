@@ -10,4 +10,8 @@ class MyController extends Controller
     {
         return view('login');
     }
+    public function Signup()
+    {
+        return view('signup');
+    }
 }
