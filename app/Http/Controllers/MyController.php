@@ -20,4 +20,9 @@ class MyController extends Controller
      public function Home(){
         return view('home/home');
      }
+
+     public function Show($id,$name='Hasan'){
+         echo $name;
+         echo $id;
+    }
 }
