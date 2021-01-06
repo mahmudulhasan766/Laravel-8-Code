@@ -14,4 +14,7 @@ class MyController extends Controller
     {
         return view('signup');
     }
+    public function Bangla(){
+        echo "I am Bangladesh";
+     }
 }
