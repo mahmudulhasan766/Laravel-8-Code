@@ -23,10 +23,14 @@ Route::get('/', function () {
 // Route::get('/login', [MyController::class, 'Login']);
 // Route::get('/signpu', [MyController::class, 'Signup']);
 
-//Route::view(uri:'/home',view:'home',['name'=>'hasan']);
-//Route::view('/home','home.home',['name'=>'Hasan']);
+
+Route::view('/home','home.home',['name'=>'Hasan']);
 
 Route::get('/login',[MyController::class, 'Login']);
-Route::get('/bangla-by',[MyController::class, 'Bangla'])->name('bangla');
-Route::get('/home',[MyController::class, 'Home'])->name('home');
+
+Route::any('/home',[MyController::class, 'Home'])->name('home');
+
+Route::prefix('web')->name('site.')->group(function(){
+    Route::get('/bangla-by',[MyController::class, 'Bangla'])->name('bangla');
+});
 
