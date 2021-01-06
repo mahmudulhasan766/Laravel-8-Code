@@ -18,6 +18,6 @@ class MyController extends Controller
         echo "I am Bangladesh";
      }
      public function Home(){
-        return view('home/home/home');
+        return view('home/home');
      }
 }
