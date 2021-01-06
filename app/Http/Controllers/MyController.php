@@ -17,4 +17,7 @@ class MyController extends Controller
     public function Bangla(){
         echo "I am Bangladesh";
      }
+     public function Home(){
+        return view('home/home/home');
+     }
 }

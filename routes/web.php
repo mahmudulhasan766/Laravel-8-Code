@@ -24,7 +24,14 @@ Route::get('/', function () {
 // Route::get('/signpu', [MyController::class, 'Signup']);
 
 //Route::view(uri:'/home',view:'home',['name'=>'hasan']);
-Route::view('/home','home',['name'=>'Hasan']);
+//Route::view('/home','home.home',['name'=>'Hasan']);
 
 Route::get('/login',[MyController::class, 'Login']);
 Route::get('/bangla',[MyController::class, 'Bangla'])->name=('bangla');
+Route::get('/home',[MyController::class, 'Home'])->name=('Hasan');
+
+Route::group(['prefix'=>'web/post'],function(){
+    Route::get('/',[MyController::class, 'Login']);
+    Route::post('/post',[MyController::class, 'Login']);
+    Route::get('/1',[MyController::class, 'Login']);
+});
