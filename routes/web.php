@@ -35,3 +35,9 @@ Route::group(['prefix'=>'web/post'],function(){
     Route::post('/post',[MyController::class, 'Login']);
     Route::get('/1',[MyController::class, 'Login']);
 });
+
+Route::prefix('test/post')->group(function(){
+    Route::get('/',[MyController::class, 'Login']);
+    Route::post('/post',[MyController::class, 'Login']);
+    Route::get('/1',[MyController::class, 'Login']);
+});
