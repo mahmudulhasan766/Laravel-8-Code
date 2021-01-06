@@ -27,6 +27,6 @@ Route::get('/', function () {
 //Route::view('/home','home.home',['name'=>'Hasan']);
 
 Route::get('/login',[MyController::class, 'Login']);
-Route::get('/bangla',[MyController::class, 'Bangla'])->name=('bangla');
-Route::get('/home',[MyController::class, 'Home'])->name=('Hasan');
+Route::get('/bangla-by',[MyController::class, 'Bangla'])->name('bangla');
+Route::get('/home',[MyController::class, 'Home'])->name('home');
 

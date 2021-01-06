@@ -8,12 +8,8 @@
 <body>
     <h1>My Home Page</h1>
     <ul>
-        <li><a href="<?php
-
-use Illuminate\Support\Facades\URL;
-
-echo url('bangla'); ?>">Home</a></li>
-        <li><a href="<?php echo URL::to('bangla') ?>">About</a></li>
+        <li><a href="<?php echo URL('home'); ?>">Home</a></li>
+        <li><a href="<?php echo route('bangla') ?>">About</a></li>
     </ul>
 </body>
 </html>
