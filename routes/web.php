@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 
+use function Ramsey\Uuid\v1;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,6 @@ Route::get('/', function () {
 });
 Route::get('/login', [MyController::class, 'Login']);
 Route::get('/signpu', [MyController::class, 'Signup']);
+
+//Route::view(uri:'/home',view:'home',['name'=>'hasan']);
+Route::view('/home','home',['name'=>'Hasan']);
