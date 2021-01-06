@@ -31,6 +31,8 @@ Route::prefix('web')->name('site.')->group(function(){
 //Route::get('show/{id}/{name?}',[MyController::class, 'Show'])->where(['id' => '[0-9]+', 'name' => '[A-Za-z]+']);
 Route::get('show/{id}/{name?}',[MyController::class, 'Show'])->whereNumber('id')->whereAlpha('name');
 
-Route::resource('posts',MyController::class);
+//Route::resource('posts',MyController::class);
 
-Route::resource('admin/test',PostController::class);
+Route::resource('admin/test',PostController::class)->only('show');
+
+Route::get('/test',[PostController::class, 'index']);
