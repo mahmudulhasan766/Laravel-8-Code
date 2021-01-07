@@ -22,6 +22,7 @@ class MyController extends Controller
      }
 
      public function Show(){
-        return view('show');
+         $title ="My show Up page";
+        return view('show',compact('title'));
     }
 }
