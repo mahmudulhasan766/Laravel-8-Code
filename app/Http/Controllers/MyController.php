@@ -21,8 +21,7 @@ class MyController extends Controller
         return view('home/home');
      }
 
-     public function Show($id,$name='Hasan'){
-         echo $name;
-         echo $id;
+     public function Show(){
+        return view('show');
     }
 }

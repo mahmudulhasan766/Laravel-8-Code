@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::view('/home','home.home',['name'=>'Hasan']);
 
 Route::get('/login',[MyController::class, 'Login']);
+Route::get('/showe',[MyController::class, 'Show']);
 
 Route::any('/home',[MyController::class, 'Home'])->name('home');
 
