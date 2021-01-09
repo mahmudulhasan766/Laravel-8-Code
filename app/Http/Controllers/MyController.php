@@ -23,6 +23,8 @@ class MyController extends Controller
 
      public function Show(){
          $title ="My show Up page";
-        return view('show',compact('title'));
+         $age=23;
+         $age2=23;
+        return view('show',compact('title','age','age2'));
     }
 }
