@@ -48,7 +48,14 @@
 @endswitch
 <br>
 
-@unless($tr)
-    <h1>Hello i'm true</h1>
+@unless($fl)
+    <h1>Hello i'm </h1>
 @endunless
 
+@isset($ist)
+    <h1>this value is true</h1>
+@endisset
+
+@isset($ist)
+  <h1>hvcn cvhbcvh hcxh ch</h1>
+@endisset

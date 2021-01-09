@@ -27,7 +27,8 @@ class MyController extends Controller
          $age2=23;
          $test=1;
          $it = 2;
-         $tr=false;
-        return view('show',compact('title','age','age2','test','it','tr'));
+         $ist=true;
+         $fl=false;
+        return view('show',compact('title','age','age2','test','it','ist','fl'));
     }
 }
