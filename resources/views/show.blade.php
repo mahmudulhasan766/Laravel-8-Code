@@ -17,3 +17,8 @@
 <h1>Age 2 is Big</h1>
 
 @endif
+
+@for($i=0;$i<50;$i+=2)
+<br>
+{{$i}}
+@endfor
