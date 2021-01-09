@@ -46,3 +46,9 @@
         Default  
            words
 @endswitch
+<br>
+
+@unless($tr)
+    <h1>Hello i'm true</h1>
+@endunless
+
