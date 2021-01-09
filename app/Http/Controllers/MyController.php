@@ -25,6 +25,8 @@ class MyController extends Controller
          $title ="My show Up page";
          $age=23;
          $age2=23;
-        return view('show',compact('title','age','age2'));
+         $test=1;
+         $it = 2;
+        return view('show',compact('title','age','age2','test','it'));
     }
 }

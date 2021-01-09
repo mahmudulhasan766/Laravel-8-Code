@@ -19,6 +19,30 @@
 @endif
 
 @for($i=0;$i<50;$i+=2)
-<br>
+
 {{$i}}
 @endfor
+<br/>
+@switch($it)
+    @case(1)
+        First case...
+        @break
+
+    @case(2)
+        Second case...
+        @break
+    @default
+        Default case...
+@endswitch
+<br/>
+@switch($test)
+    @case(1)
+        Words
+        @break
+    @case(2)
+        Other Words
+        @break
+    @default
+        Default  
+           words
+@endswitch
