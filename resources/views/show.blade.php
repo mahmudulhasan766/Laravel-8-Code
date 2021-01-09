@@ -59,3 +59,8 @@
 @isset($ist)
   <h1>hvcn cvhbcvh hcxh ch</h1>
 @endisset
+
+@empty ($emt)
+    empty
+
+@endempty
