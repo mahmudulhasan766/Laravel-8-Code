@@ -18,13 +18,15 @@
 
 @endif
 
-@for($i=0;$i<50;$i+=2)
+@for($i=0;$i<50;$i+=10)
 
 {{$i}}
-<br/>
+
 @endfor
-<br/>
-@switch($it)
+<br>
+
+<?php $in=2; ?>
+@switch($in)
     @case(1)
         First case...
         @break
@@ -65,6 +67,14 @@
     empty
 
 @endempty
-
-
 {!!$text!!}
+<br>
+
+@php($i=5)
+
+@while($i<=10)
+   While is : {{$i }}<br>
+
+    @php($i++)
+
+@endwhile
