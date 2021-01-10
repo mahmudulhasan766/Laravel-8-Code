@@ -76,5 +76,12 @@
    While is : {{$i }}<br>
 
     @php($i++)
+@endwhile
 
+@while(true)
+    @php($n = rand(1,20))
+
+    @if($n!=5)
+        <h1>Working</h1>
+    @endif
 @endwhile
