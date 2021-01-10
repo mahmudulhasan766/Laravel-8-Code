@@ -29,7 +29,9 @@ class MyController extends Controller
          $it = 2;
          $ist=true;
          $fl=false;
-         $emt = false;
-        return view('show',compact('title','age','age2','test','it','ist','fl','emt'));
+         $emt = true;
+         $text = "One of our <b>numerous qualities</b> is the <mark>consideration</mark> of tight element driven criticism, combined with client collaboration following continuous integration and continuous development.";
+        return view('show',
+                   compact('title','age','age2','test','it','ist','fl','emt','text'));
     }
 }

@@ -21,6 +21,7 @@
 @for($i=0;$i<50;$i+=2)
 
 {{$i}}
+<br/>
 @endfor
 <br/>
 @switch($it)
@@ -60,7 +61,10 @@
   <h1>hvcn cvhbcvh hcxh ch</h1>
 @endisset
 
-@empty ($emt)
+@empty (!$emt)
     empty
 
 @endempty
+
+
+{!!$text!!}
