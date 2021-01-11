@@ -13,3 +13,9 @@
     <P>{{ $post['contant']}}</P>
     @endif
 @endforeach
+
+<x-xyz></x-xyz>
+
+<x-xyz></x-xyz>
+
+<x-xyz></x-xyz>
