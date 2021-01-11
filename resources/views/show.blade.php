@@ -1,12 +1,15 @@
 <h1>My Show Page</h1>
-
+<br>...............................
 <?php
     echo 5+5;
 ?>
+<br>..............................
 <br>
 {{ 56+45}}
+<br>..............................
 
 {{$title}}
+<br>..............................
 <br>
 {{$age}}
 @if($age>$age2)
@@ -81,7 +84,9 @@
 @while(true)
     @php($n = rand(1,20))
 
-    @if($n!=5)
+    <p>I am random number: </p>{{$n.' '}}
+    @if($n==5)
         <h1>Working</h1>
+        @break
     @endif
 @endwhile
