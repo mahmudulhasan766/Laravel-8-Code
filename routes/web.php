@@ -37,3 +37,4 @@ Route::get('show/{id}/{name?}',[MyController::class, 'Show'])->whereNumber('id')
 Route::resource('admin/test',PostController::class)->only('show');
 
 Route::get('/test',[PostController::class, 'index']);
+Route::get('/foreach',[MyController::class, 'forEach']);

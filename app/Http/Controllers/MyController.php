@@ -20,6 +20,47 @@ class MyController extends Controller
      public function Home(){
         return view('home/home');
      }
+     public function forEach(){
+         $id =45;
+
+        $data =[];
+        $data['title'] ="My Home Page";
+        $data['posts'] = [
+            [
+                'id'=>1,
+                'title'=>'my name is hasan',
+                'contant'=>'i am a Flutter and Laravel developer'
+            ],
+            [
+                'id'=>2,
+                'title'=>'my name is hasan',
+                'contant'=>'i am a Flutter and Laravel developer'
+            ],
+            [
+                'id'=>3,
+                'title'=>'my name is hasan',
+                'contant'=>'i am a Flutter and Laravel developer'
+            ],
+            [
+                'id'=>4,
+                'title'=>'my name is hasan',
+                'contant'=>'i am a Flutter and Laravel developer'
+            ],
+            [
+                'id'=>5,
+                'title'=>'my name is hasan',
+                'contant'=>'i am a Flutter and Laravel developer'
+            ],
+            [
+                'id'=>6,
+                'title'=>'my name is hasan',
+                'contant'=>'i am a Flutter and Laravel developer'
+            ],
+
+        ];
+
+        return view('foreach',$data);
+     }
 
      public function Show(){
          $title ="My show Up page";
