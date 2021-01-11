@@ -14,8 +14,6 @@
     @endif
 @endforeach
 
-<x-xyz></x-xyz>
+<x-xyz/>
 
-<x-xyz></x-xyz>
-
-<x-xyz></x-xyz>
+<x-card :message="$title"></x-card>
