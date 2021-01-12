@@ -11,10 +11,10 @@ class MyCard extends Component
      *
      * @return void
      */
-    public $message;
+    public $msg;
     public function __construct($message)
     {
-        $this->message = $message;
+        $this->msg = $message;
     }
 
     /**

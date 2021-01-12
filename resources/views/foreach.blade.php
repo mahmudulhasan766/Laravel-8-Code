@@ -16,4 +16,4 @@
 
 <x-xyz/>
 
-<x-card :message="$title"></x-card>
+<x-card :message="$post['title']"></x-card>
