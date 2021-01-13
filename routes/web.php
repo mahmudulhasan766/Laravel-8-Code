@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Profile\ProController;
 use App\Http\Controllers\MyController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,3 +39,6 @@ Route::resource('admin/test',PostController::class)->only('show');
 
 Route::get('/test',[PostController::class, 'index']);
 Route::get('/foreach',[MyController::class, 'forEach']);
+
+//profile................
+Route::get('/prohome',[ProController::class,'home']);
