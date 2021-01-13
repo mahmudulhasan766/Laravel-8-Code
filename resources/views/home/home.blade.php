@@ -12,7 +12,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-  
+  @include('inc.footer')
      <p>Hello I am Hasan</p>
      <div class="card" style="width: 18rem;">
   <img src="https://prod-everyoneactive-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2018/04/13112228/Fareham_HeaderBanner.png" class="figure-img img-fluid rounded" alt="...">
@@ -22,10 +22,8 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    @include('inc.footer')
-  
+
     <footer class="bg-secondary">
         <p>hi, this is my cuntry</p>
     </footer>
