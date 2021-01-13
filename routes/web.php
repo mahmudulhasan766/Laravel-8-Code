@@ -16,7 +16,7 @@ Route::get('/', function () {
 // Route::get('/signpu', [MyController::class, 'Signup']);
 
 
-Route::view('/home','home.home',['name'=>'Hasan']);
+//Route::view('/home','home.home',['name'=>'Hasan']);
 
 Route::get('/login',[MyController::class, 'Login']);
 Route::get('/showe',[MyController::class, 'Show']);
